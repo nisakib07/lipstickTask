@@ -8,3 +8,7 @@
 
   font-style: normal;
 }
+
+#hoverBg li {
+  @apply hover:bg-gray-500 rounded-lg;
+}

@@ -2,8 +2,8 @@ import { BiCartAdd } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="navbar bg-gray-700 text-white">
+    <div className="bg-gray-700">
+      <div className="navbar max-w-screen-xl mx-auto text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-700 rounded-box w-52">
               <li>
                 <a>Home</a>
               </li>
@@ -46,14 +46,16 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">TopSale</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-lg font-bold">
+          <ul
+            className="menu menu-horizontal px-1 text-lg font-bold"
+            id="hoverBg">
             <li>
               <a>Home</a>
             </li>
             <li>
               <details>
                 <summary>Products</summary>
-                <ul className="p-2">
+                <ul className="p-2 bg-gray-700">
                   <li>
                     <a>Lipstick</a>
                   </li>
