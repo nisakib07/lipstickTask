@@ -20,7 +20,7 @@ const Banner = () => {
       image: "https://i.ibb.co/zPN64dz/colors.webp",
     },
     {
-      punchline: "Get Ready to Turn Heads with Stunning Shades!",
+      punchline: "Turn Heads with Stunning Shades!",
       image: "https://i.ibb.co/3kjt8PG/shades.webp",
     },
   ];
@@ -40,7 +40,7 @@ const Banner = () => {
         {bannerItems?.map((banner) => (
           <SwiperSlide>
             <div className="min-h-[500px] flex flex-col-reverse lg:flex-row items-center justify-around">
-              <div>
+              <div className=" text-center">
                 <h1 className="text-4xl font-extrabold">{banner?.punchline}</h1>
               </div>
               <div>
