@@ -50,12 +50,20 @@ const Shade = () => {
       <h1 className="mt-10 text-5xl text-center font-extrabold">
         FIND YOUR SIGNATURE SHADE
       </h1>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {productDetails?.map((product) => (
-          <div className="bg-gray-700 p-3 rounded-lg text-white">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative">
+        {productDetails?.map((product, index) => (
+          <div
+            className="relative bg-gray-700 p-3 rounded-lg text-white overflow-hidden"
+            key={index}>
             <img src={product?.image} className="w-full h-[340px]" alt="" />
-            <h1 className="mt-2  text-xl font-extrabold">{product?.title}</h1>
+            <h1 className="mt-2 text-xl font-extrabold">{product?.title}</h1>
             <p className="text-lg font-medium">{product?.description}</p>
+            <div className="absolute inset-0 flex items-center justify-center text-xl font-bold opacity-0 hover:opacity-100 cursor-pointer">
+              <div className="bg-black bg-opacity-50 absolute inset-0"></div>
+              <p className="relative z-10 bg-white text-black p-2 rounded-lg">
+                Try it on
+              </p>
+            </div>
           </div>
         ))}
       </div>
