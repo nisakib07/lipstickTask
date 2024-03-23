@@ -12,7 +12,7 @@ const Footer = () => {
             <p className="text-xl">
               TopSale Industries Ltd.
               <br />
-              Providing reliable tech since 2020
+              Providing reliable cosmetics since 2020
             </p>
           </div>
         </aside>
