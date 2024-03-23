@@ -44,7 +44,7 @@ const Banner = () => {
                 <h1 className="text-4xl font-extrabold">{banner?.punchline}</h1>
               </div>
               <div>
-                <img className="w-96" src={banner?.image} alt="" />
+                <img className="w-96 h-96" src={banner?.image} alt="" />
               </div>
             </div>
           </SwiperSlide>

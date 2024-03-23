@@ -45,7 +45,7 @@ const Testimonials = () => {
 
   return (
     <div className="max-w-screen-xl lg:mx-auto bg-gray-300 py-4 mt-16 rounded-lg mx-4">
-      <h1 className="mt-16 text-5xl text-center font-extrabold">
+      <h1 className="mt-16 text-xl md:text-5xl text-center font-extrabold">
         TESTIMONIALS FOR YOU
       </h1>
       <Swiper
