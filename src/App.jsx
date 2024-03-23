@@ -2,6 +2,7 @@ import Banner from "./components/Banner";
 import Faq from "./components/Faq";
 import Navbar from "./components/Navbar";
 import Shade from "./components/Shade";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <Banner></Banner>
       <Shade></Shade>
       <Faq></Faq>
+
+      <Testimonials></Testimonials>
     </div>
   );
 }

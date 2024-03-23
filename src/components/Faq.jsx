@@ -66,7 +66,8 @@ const Faq = () => {
                   <div>
                     {faq?.answer?.map((answer) => (
                       <div answer={answer} className="flex items-center gap-3">
-                        <TiTick></TiTick> {answer}
+                        <i class="fa-solid fa-check"></i>
+                        {answer}
                       </div>
                     ))}
                   </div>
