@@ -47,14 +47,21 @@ const Faq = () => {
         KEEP NO QUESTIONS INSIDE!
       </h1>
 
-      <div className="mt-10 flex flex-col lg:flex-row items-center gap-5">
-        <div>
+      <div className="mt-10 flex flex-col lg:flex-row items-center gap-5 mx-4">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out">
           <h1 className="text-3xl font-bold w-full lg:w-[500px]">
             SILKY MATTE FINISH, 12HR COMFORTABLE WEAR.
             PIGMENT-RICH/FULL-COVERAGE COLOUR
           </h1>
         </div>
-        <div className="join join-vertical w-full">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          className="join join-vertical w-full overflow-x-hidden">
           {faqData?.map((faq) =>
             faq?.question === "All benefits" ? (
               <div className="collapse collapse-arrow join-item border border-base-300">

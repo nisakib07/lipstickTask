@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 // import required modules
@@ -44,7 +44,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto bg-gray-300 py-4 mt-16 rounded-lg">
+    <div className="max-w-screen-xl lg:mx-auto bg-gray-300 py-4 mt-16 rounded-lg mx-4">
       <h1 className="mt-16 text-5xl text-center font-extrabold">
         TESTIMONIALS FOR YOU
       </h1>
@@ -55,7 +55,7 @@ const Testimonials = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper mt-10">
         {testimonials?.map((testimonial) => (
           <SwiperSlide>
@@ -65,6 +65,9 @@ const Testimonials = () => {
                 src={testimonial?.image}
                 alt=""
               />
+              <div>
+                <h1 className="text-xl font-bold">{testimonial?.name}</h1>
+              </div>
               <Rating
                 className="text-sm"
                 initialRating={testimonial?.rating}
