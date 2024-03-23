@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Faq from "./components/Faq";
 import Navbar from "./components/Navbar";
 import Shade from "./components/Shade";
 
@@ -8,6 +9,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Shade></Shade>
+      <Faq></Faq>
     </div>
   );
 }
